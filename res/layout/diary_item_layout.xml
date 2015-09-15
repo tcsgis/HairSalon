@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/diary_cards_list_shape" >
+
+    <RelativeLayout android:id="@+id/card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="12dp"/>
+        
+        <TextView android:id="@+id/user_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/user_head"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="15sp"
+            />
+        
+        <TextView android:id="@+id/user_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toRightOf="@id/user_head"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"/>
+        
+           <TextView android:id="@+id/user_location"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toRightOf="@id/user_time"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"/>
+           
+           <ImageView android:id="@+id/diary_visitable"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_above="@id/user_location"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="11dp"
+               android:layout_marginTop="10dp"
+               android:contentDescription="@string/diary_desc_over_long"/>
+    </RelativeLayout>
+    
+    <com.changhong.activity.familydiary.NineGridlayout
+        android:id="@+id/card_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">       
+    </com.changhong.activity.familydiary.NineGridlayout>
+    
+    
+    <TextView android:id="@+id/card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="15sp"
+        android:textColor="#4a4a4a"
+        android:lineSpacingExtra="8dp"
+     />
+    <RelativeLayout android:id="@+id/function_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+        <Button android:id="@+id/review_button"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/review"
+            />
+         <Button android:id="@+id/delete_button"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_toLeftOf="@id/review_button"
+            android:background="@drawable/delete"
+            />
+    </RelativeLayout>
+       
+    <com.changhong.activity.familydiary.ReviewList 
+        android:id="@+id/review_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:visibility="gone"
+        android:divider="@null">
+        
+    </com.changhong.activity.familydiary.ReviewList>
+
+</LinearLayout>

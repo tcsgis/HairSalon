@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/wl_title1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="42dp"
+            android:text="@string/awake1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line2" />
+
+    <LinearLayout
+        android:id="@+id/ll_awake1"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/item_fruit_back" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/awake2"
+                android:textColor="@color/txt_gray2"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/noti_awake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="42dp"
+                android:src="@drawable/check_box" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/line2" />
+
+    <LinearLayout
+        android:id="@+id/ll_awake2"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/item_fruit_back" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/awake3"
+                android:textColor="@color/txt_gray2"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/window_awake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="42dp"
+                android:src="@drawable/check_box" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/line2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="42dp"
+            android:text="@string/awake4"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line2" />
+
+    <LinearLayout
+        android:id="@+id/ll_awake3"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/item_fruit_back" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/awake"
+                android:textColor="@color/txt_gray2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/awake_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="42dp"
+                android:drawableEnd="@drawable/deadline_end"
+                android:gravity="center_vertical"
+                android:text="20:00"
+                android:textSize="@dimen/txt_normal_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/awake_time"
+                android:text="@string/awake6"
+                android:textSize="@dimen/txt_normal_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

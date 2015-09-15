@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/property_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ed5736"
+            android:gravity="center"
+            android:text="@string/publish_diary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_large_size" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back_selector" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/send"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_normal_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/upload_photo_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" >
+        </GridView>
+
+        <EditText
+            android:id="@+id/describe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/hint_diary_describe"
+            android:padding="15dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linear" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/location_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/location_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="#A5A5A5"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/authority_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/authority_setting"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/authority_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="@string/all_family_members_allow"
+                android:textColor="#A5A5A5"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linear" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

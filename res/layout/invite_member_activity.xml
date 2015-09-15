@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/rela_invite_member_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/txt_invite_member"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ed5736"
+            android:gravity="center"
+            android:text="@string/invite_member"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_back_2_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back_selector" />
+
+        <Button
+            android:id="@+id/btn_popup_fast_switch"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_switch_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_invite_member"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rela_invite_member_title" >
+
+        <RelativeLayout
+            android:id="@+id/rela_invite_member_edit"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_divide" />
+
+            <EditText
+                android:id="@+id/edit_invite_member"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/invite_member_hint"
+                android:paddingLeft="12dp"
+                android:textColorHint="#cdcbc8"
+                android:singleLine="true"
+                android:textSize="15sp" 
+                android:editable="false"/>
+
+            <Button
+                android:id="@+id/btn_invite_member_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/small_btn_selector"
+                android:gravity="center"
+                android:text="@string/cha_zhao"
+                android:textColor="@color/title_back" 
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/line_divide" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_invite_member_address_list"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/rela_invite_member_edit"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_no_line_selector" >
+
+            <ImageView
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_divide" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/phone_green" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/phone"
+                android:background="@null"
+                android:paddingLeft="12dp"
+                android:text="@string/invite_member_text"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/line_divide" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_invite_member_qq"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/rela_invite_member_address_list"
+            android:background="@drawable/back_no_line_selector"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/qq_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/qq_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/qq_logo"
+                android:background="@null"
+                android:paddingLeft="12dp"
+                android:text="@string/invite_member_text_qq"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/line_divide" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rela_invite_member_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/rela_invite_member_qq"
+            android:background="@drawable/back_no_line_selector"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/weixin"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/wei_xin_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/weixin"
+                android:background="@null"
+                android:paddingLeft="12dp"
+                android:text="@string/invite_member_text_mm"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/line_divide" />
+        </RelativeLayout>
+
+        <com.changhong.activity.widget.other.pull2refresh.PullToRefreshListView
+            android:id="@+id/list_search_member"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rela_invite_member_weixin"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" >
+        </com.changhong.activity.widget.other.pull2refresh.PullToRefreshListView>
+
+        <TextView
+            android:id="@+id/list_search_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

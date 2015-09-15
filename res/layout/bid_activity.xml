@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_back"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:paddingBottom="17dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="220dp"
+            android:layout_height="295dp"
+            android:background="@color/activity_back"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/price_ll"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/bid_acString2" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/edit_paddingleft"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/salon_btn"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/bid_acString3"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

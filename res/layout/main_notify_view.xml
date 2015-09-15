@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rela_notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/txt_notification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_back"
+            android:gravity="center"
+            android:text="@string/notification"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_large_size" />
+
+        <ImageButton
+            android:id="@+id/clear_notifications"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:src="@drawable/mm_title_remove" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_notification"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rela_notification_title"
+        android:layout_gravity="center"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

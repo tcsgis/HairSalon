@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/whole_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ED5736"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/time_circle"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="58dp"
+            android:src="@drawable/timeline_circle" />
+
+        <ImageView
+            android:id="@+id/view_rightLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/time_circle"
+            android:background="#ED5736"
+            android:src="@drawable/rightline" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="58dp"
+            android:layout_below="@id/time_circle" >
+
+            <ImageView
+                android:id="@+id/view_bottomLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.5dp"
+                android:src="@drawable/bottomline" />
+
+            <TextView
+                android:id="@+id/view_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/view_bottomLine"
+                android:paddingLeft="30dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="#ED5736"
+                android:textSize="15sp" 
+                android:focusable="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

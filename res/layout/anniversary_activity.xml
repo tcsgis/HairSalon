@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/anni_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/txt_anniversary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_back"
+            android:gravity="center"
+            android:text="@string/anniversary"
+            android:textColor="@color/txt_title"
+            android:textSize="@dimen/txt_large_size" />
+
+        <Button
+            android:id="@+id/btn_back_2_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back_selector" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_add_selector"
+            android:gravity="center"
+            android:textColor="@color/txt_btn_light"
+            android:textSize="@dimen/txt_normal_size" />
+    </RelativeLayout>
+
+    <com.changhong.activity.anniversary.AnniSwipeListView
+        android:id="@+id/list_anni"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/anni_title"
+        android:listSelector="@android:color/transparent" >
+    </com.changhong.activity.anniversary.AnniSwipeListView>
+
+</RelativeLayout>

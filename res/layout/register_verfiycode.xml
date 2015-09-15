@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:signup="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:background="@drawable/corners"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.changhong.activity.login.IconEditText
+        android:id="@+id/signup_verfiycode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="-13dp"       
+        signup:hint="@string/signup_verfiycode"
+        signup:inputType="number"
+        signup:max="6"
+        signup:min="6" >
+    </com.changhong.activity.login.IconEditText>
+
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#E2E2E2" />
+    
+    <Button
+        android:id="@+id/btn_signup_reget"
+        android:layout_width="93dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:text="@string/requestverfiycode"
+        android:textColor="#4994f1"
+        android:textSize="@dimen/btn_normal_size" />
+
+</LinearLayout>

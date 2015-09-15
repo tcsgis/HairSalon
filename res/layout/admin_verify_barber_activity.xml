@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_back"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_back" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/barber_reString3"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:maxLength="5"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/barber_reString4"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/id_num"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:maxLength="18"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/admin_vbString6"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:maxLength="11"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/salon_rbString3"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/nick"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/salon_rbString4"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/exp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/salon_reString38"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/district"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/salon_rbString19"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/salon"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="@string/admin_vbString10"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <TextView
+                        android:id="@+id/fencheng"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/salonRe_paddingRight"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/edit_paddingleft"
+                        android:singleLine="true"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/salon_rbString5"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="180dp"
+                        android:layout_height="95dp"
+                        android:layout_marginLeft="7dp"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salon_rbString25"
+                    android:textSize="@dimen/salonRe_txt_size" />
+
+                <TextView
+                    android:id="@+id/recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:textSize="@dimen/salonRe_txt_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_vbString3"
+                    android:textSize="@dimen/salonRe_txt_size" />
+
+                <com.changhong.activity.widget.HorizontalListView
+                    android:id="@+id/zhengshu_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/else_photo_list_height"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop" >
+                </com.changhong.activity.widget.HorizontalListView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_vbString4"
+                    android:textSize="@dimen/salonRe_txt_size" />
+
+                <com.changhong.activity.widget.HorizontalListView
+                    android:id="@+id/zuopin_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/else_photo_list_height"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop" >
+                </com.changhong.activity.widget.HorizontalListView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_vbString5"
+                    android:textSize="@dimen/salonRe_txt_size" />
+
+                <ListView
+                    android:id="@+id/product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    android:listSelector="@null"
+                    android:scrollbars="@null" >
+                </ListView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/bi_tian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/salon_rbString8"
+                        android:textSize="@dimen/salonRe_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/salon_rbString12"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/salon_rbString13"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/salon_rbString14"
+                            android:textSize="@dimen/salonRe_txt_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/salon_rbString9"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/tang_duan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/tang_zhong"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/tang_chang"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/salon_rbString10"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/ran_duan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/ran_zhong"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/ran_chang"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/salon_rbString10"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/jian_duan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/jian_zhong"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+
+                        <TextView
+                            android:id="@+id/jian_chang"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:singleLine="true"
+                            android:textSize="@dimen/salonRe_txt_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <TextView
+                    android:id="@+id/health_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/admin_vbString11"
+                    android:textSize="@dimen/salonRe_txt_size" />
+
+                <ImageView
+                    android:id="@+id/health_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <TextView
+                    android:id="@+id/adept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/admin_vbString11"
+                    android:textSize="@dimen/salonRe_txt_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:id="@+id/dengji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/salonRe_paddingLeft"
+                android:paddingRight="@dimen/salonRe_paddingRight" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/dengji_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/admin_vbString9"
+                        android:textSize="@dimen/salonRe_txt_size" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/bi_tian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/yi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yi_point"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/online" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/salon_reString29" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/er"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/er_point"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/unonline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/salon_reString30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/san"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/san_point"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/unonline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/salon_reString31" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/si"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/si_point"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/unonline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/salon_reString32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/wu_point"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/unonline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/salon_reString33" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/salonRe_txt_paddingTop"
+                android:background="@color/divide_line" />
+
+            <Button
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/salonRe_paddingLeft"
+                android:layout_marginRight="@dimen/salonRe_paddingRight"
+                android:layout_marginTop="@dimen/salonRe_paddingRight"
+                android:background="@drawable/salon_btn"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/admin_vbString7"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/salonRe_paddingRight"
+                android:layout_marginLeft="@dimen/salonRe_paddingLeft"
+                android:layout_marginRight="@dimen/salonRe_paddingRight"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/salon_btn_invalid"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/admin_vbString8"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btn_my_family"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/family"
+            android:text="@string/my_family" />
+
+        <Button
+            android:id="@+id/btn_messager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/message_board"
+            android:text="@string/message_liu_yan" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/photo_wall"
+            android:text="@string/photo_wall" >
+        </Button>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@null" >
+
+        <Button
+            android:id="@+id/btn_health"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/health"
+            android:text="@string/health" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/map"
+            android:text="@string/local" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_assets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/assets"
+            android:text="@string/family_assets" >
+        </Button>
+    </TableRow>
+
+</TableLayout>

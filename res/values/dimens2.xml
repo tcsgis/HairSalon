@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_title_height">50dp</dimen>
+    <dimen name="login_txt_size">18sp</dimen>
+    <dimen name="btn_height">33dp</dimen>
+    <dimen name="me_txt_height">40dp</dimen>
+    <dimen name="txt_margin_top">7dp</dimen>
+    <dimen name="main_view_margin">15dp</dimen>
+    
+    <dimen name="photo_width">160dp</dimen>
+    <dimen name="photo_height">115dp</dimen>
+    <dimen name="edit_paddingleft">5dp</dimen>
+    
+    <!-- SalonRegisterActivity -->
+    <dimen name="salonRe_txt_size">15sp</dimen>
+    <dimen name="salonRe_txt_paddingTop">13dp</dimen>
+    <dimen name="salonRe_paddingLeft">38dp</dimen>
+    <dimen name="salonRe_paddingRight">30dp</dimen>
+    
+    <dimen name="custom_order_size">15sp</dimen>
+    <dimen name="barber_show_photo_padding">10dp</dimen>
+    <dimen name="else_photo_list_height">140dp</dimen>
+    <dimen name="else_photo_show_list_height">120dp</dimen>
+    
+</resources>

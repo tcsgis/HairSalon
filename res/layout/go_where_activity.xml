@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/go_where_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/go_where"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ed5736"
+            android:gravity="center"
+            android:text="@string/local"
+            android:textColor="@color/txt_title"
+            android:textSize="@dimen/txt_large_size" />
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back_selector" />
+        
+         <ImageView
+            android:id="@+id/busline_activity_img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/location_search_90x96" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mygridcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#000000"
+            android:columnWidth="80dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="6"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="0dp" >
+        </GridView>
+    </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/mygridcontainer"
+        android:layout_below="@id/go_where_header" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/go_where_map_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"/>
+    </LinearLayout>
+
+     <com.changhong.activity.where.FunctionPhoneAddView 
+        android:id="@+id/add_function_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go_where_header"
+        android:layout_alignParentRight="true"/>
+     
+    <com.changhong.activity.where.SlideDateView
+        android:id="@+id/slideview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true" >
+    </com.changhong.activity.where.SlideDateView>
+
+</RelativeLayout>

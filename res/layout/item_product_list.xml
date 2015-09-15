@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:background="@color/activity_back"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/band"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/salon_reString41"
+        android:maxLength="5"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/usage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/salon_reString41"
+        android:maxLength="5"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="0.5"
+        android:background="@color/white"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/origin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="0.5"
+        android:background="@color/white"
+        android:gravity="center"
+        android:maxLength="3"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="20dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_product" />
+    </RelativeLayout>
+
+</LinearLayout>

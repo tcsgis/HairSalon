@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/title_my_coin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ed5736"
+            android:gravity="center"
+            android:text="@string/get_my_coin"
+            android:textColor="@color/txt_title"
+            android:textSize="@dimen/txt_large_size" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_coin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/coin_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/coin_pic" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_divide" />
+
+        <TextView
+            android:id="@+id/my_coin_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/coin_pic"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:text="@string/get_everyday_coin"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/getCoinBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/small_btn_selector"
+            android:gravity="center"
+            android:text="@string/getcoin"
+            android:textColor="@color/title_back" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divide" />
+
+</LinearLayout>

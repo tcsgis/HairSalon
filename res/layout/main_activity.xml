@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_back"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/top_vf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.aaa.activity.main.MainView
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.aaa.activity.main.MainView>
+
+        <com.aaa.activity.main.SalonView
+            android:id="@+id/salon_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.aaa.activity.main.SalonView>
+
+        <com.aaa.activity.main.BarberView
+            android:id="@+id/barber_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.aaa.activity.main.BarberView>
+
+        <com.aaa.activity.main.BidView
+            android:id="@+id/bid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.aaa.activity.main.BidView>
+
+        <com.aaa.activity.main.MeView
+            android:id="@+id/me_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.aaa.activity.main.MeView>
+    </ViewFlipper>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <ImageButton
+                android:id="@+id/btn_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_page1" />
+
+            <ImageButton
+                android:id="@+id/btn_salon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_page2" />
+
+            <ImageButton
+                android:id="@+id/btn_barber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_page3" />
+
+            <ImageButton
+                android:id="@+id/btn_bid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_page4" />
+
+            <ImageButton
+                android:id="@+id/btn_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_page5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/img_salon_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/red_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/img_barber_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/red_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/img_bid_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/red_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/img_me_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/red_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

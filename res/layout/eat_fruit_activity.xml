@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcom_back"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/wl_title1" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_below="@id/title"
+        android:src="@drawable/eat_back" />
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/back_eat" >
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_has_eat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eat1"
+                android:textColor="@color/txt_green"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="2015-04-18"
+                android:textSize="@dimen/txt_normal_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_left_gray"
+                android:visibility="gone" />
+
+            <com.changhong.activity.widget.HorizontalListView
+                android:id="@+id/list_eat_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+            </com.changhong.activity.widget.HorizontalListView>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_right_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_hasnt_eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/eat2"
+            android:textColor="@color/txt_green"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back"
+        android:background="@drawable/back_eat" >
+
+        <TextView
+            android:id="@+id/txt_no_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/eat3"
+            android:textColor="@color/txt_green"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-70dp"
+        android:src="@drawable/eat_icon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_left_gray"
+            android:visibility="gone" />
+
+        <com.changhong.activity.widget.HorizontalListView
+            android:id="@+id/list_eat_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+        </com.changhong.activity.widget.HorizontalListView>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_right_gray"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl2"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_fruit"
+            android:textColor="@color/txt_green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            android:drawableEnd="@drawable/deadline_end"
+            android:gravity="center_vertical"
+            android:text="2015-04-18"
+            android:textSize="@dimen/txt_normal_size" />
+    </LinearLayout>
+
+</RelativeLayout>

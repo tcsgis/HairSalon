@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linear" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/photo_describe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/photo_describe"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linear" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/save_photo"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linear" >
+    </ImageView>
+
+</LinearLayout>

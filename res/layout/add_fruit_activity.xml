@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/wl_title1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="@string/take_photo"
+            android:textSize="@dimen/txt_normal_size" />
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/camera" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="@string/fruit_name"
+            android:textSize="@dimen/txt_normal_size" />
+
+        <EditText
+            android:id="@+id/edit_fruit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:background="@null"
+            android:hint="@string/which_fruit"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/txt_small_size" />
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@id/edit_fruit"
+            android:layout_below="@id/edit_fruit"
+            android:layout_marginTop="2dp"
+            android:src="@color/welcom_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="@string/deadline"
+            android:textSize="@dimen/txt_normal_size" />
+
+        <TextView
+            android:id="@+id/txt_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:drawableEnd="@drawable/deadline_end"
+            android:gravity="center_vertical"
+            android:text="2015-04-18"
+            android:textSize="@dimen/txt_normal_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="@string/fresh_time"
+            android:textSize="@dimen/txt_normal_size" />
+
+        <TextView
+            android:id="@+id/edit_fresh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="@dimen/txt_normal_size" />
+<!--         <TextView -->
+<!--             android:id="@+id/edit_fresh_time" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="120dp" -->
+<!--             android:background="@null" -->
+<!--             android:hint="@string/fresh_time_hint" -->
+<!--             android:textColorHint="@color/hint" -->
+<!--             android:textSize="@dimen/txt_small_size" /> -->
+
+<!--         <ImageView -->
+<!--             android:layout_width="222dp" -->
+<!--             android:layout_height="0.5dp" -->
+<!--             android:layout_alignLeft="@id/edit_fresh_time" -->
+<!--             android:layout_below="@id/edit_fresh_time" -->
+<!--             android:layout_marginTop="2dp" -->
+<!--             android:src="@color/welcom_text" /> -->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:src="@color/line2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="@string/zhi_ding"
+            android:textSize="@dimen/txt_normal_size" />
+
+        <ImageView
+            android:id="@+id/img_zhi_ding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:src="@drawable/check_box" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="@string/awake"
+            android:textSize="@dimen/txt_normal_size" />
+
+        <ImageView
+            android:id="@+id/img_awake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dp"
+            android:src="@drawable/check_box2" />
+
+        <TextView
+            android:id="@+id/txt_awake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:drawableEnd="@drawable/deadline_end"
+            android:gravity="center_vertical"
+            android:text="@string/awake_time_3"
+            android:textSize="@dimen/txt_normal_size" />
+    </RelativeLayout>
+
+</LinearLayout>

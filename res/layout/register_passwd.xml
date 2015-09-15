@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.changhong.activity.login.IconEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:signup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/signup_passwd"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:background="@drawable/corners"
+    signup:err="@string/signup_err_passwd"
+    signup:hint="@string/signup_passwd"
+    signup:inputType="password"
+    signup:icon="@drawable/lock"
+    signup:max="16"
+    signup:min="6" />

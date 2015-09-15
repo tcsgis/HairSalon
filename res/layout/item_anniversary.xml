@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="109dp"
+    android:background="#66ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_anni_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textColor="#a2a2a2"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:background="#66ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/layout_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/img_anni_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/anni_birthday" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@id/img_anni_type" >
+
+                <TextView
+                    android:id="@+id/txt_anni_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_normal_size" />
+
+                <TextView
+                    android:id="@+id/txt_anni_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/txt_anni_name"
+                    android:layout_below="@id/txt_anni_name"
+                    android:textColor="#a2a2a2"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_day_still_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anni_still"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_normal_size" />
+
+                <TextView
+                    android:id="@+id/txt_day_still"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff5408"
+                    android:textSize="@dimen/txt_large_size" />
+
+                <TextView
+                    android:id="@+id/txt_day_still_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anni_day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_normal_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_right"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:background="#FF4646" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mm_title_remove" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/my_family_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/family_location_activity_label_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_back"
+            android:gravity="center"
+            android:text="@string/family_address"
+            android:textColor="@color/txt_title"
+            android:textSize="@dimen/txt_large_size" />
+
+        <ImageView
+            android:id="@+id/family_location_activity_img_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_back_selector" />
+        <ImageView
+            android:id="@+id/family_location_activity_img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/location_search_90x96" />
+        
+    </RelativeLayout>
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/family_location_activity_baidumapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/location_info"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/route_adapter_bg_shape"
+            android:visibility="invisible"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/family_location_activity_label_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/family_location_activity_action_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_corner_cicle"
+                    android:text="@string/ok_queren"
+                    android:textColor="#ed5736" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/family_location_activity_label_detailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#8a8a8a"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

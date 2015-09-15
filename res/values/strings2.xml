@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity ID -->
+    <string name="activity_id_salonactivity">activity_id_salonactivity</string>
+    <string name="activity_id_registeractivity">activity_id_registeractivity</string>
+    <string name="activity_id_salonregisteractivity">activity_id_salonregisteractivity</string>
+    <string name="activity_id_salonaddbarberactivity">activity_id_salonaddbarberactivity</string>
+    <string name="activity_id_salonregisterbarberactivity">activity_id_salonregisterbarberactivity</string>
+    <string name="activity_id_barberregisteractivity">activity_id_barberregisteractivity</string>
+    <string name="activity_id_customregisteractivity">activity_id_customregisteractivity</string>
+    <string name="activity_id_imgfilelistactivity">activity_id_imgfilelistactivity</string>
+    <string name="activity_id_cropimageactivity">activity_id_cropimageactivity</string>
+    
+    <string name="app_name">梳妆台</string>
+    <string name="area_cheng_du">成都</string>
+    <string name="search_hint">请输入发廊或发型师的名字</string>
+    <string name="service1">剪</string>
+    <string name="service2">烫</string>
+    <string name="service3">染</string>
+    <string name="service4">护理</string>
+    <string name="service5">盘发</string>
+    <string name="service6">美甲</string>
+    <string name="service7">化妆</string>
+    <string name="dialog_title">提示</string>
+    <string name="all_area">全部</string>
+    <string name="default_district">四川省-成都市-全部</string>
+    <string name="default_area">四川省-成都市-全部</string>
+    <string name="upload_fail">上传信息失败，请重试</string>
+    <string name="upload_success">上传成功，请等待审核</string>
+    <string name="upload_success2">上传成功</string>
+    <string name="set_success">设置成功</string>
+    <string name="set_fail">设置失败</string>
+    <string name="publish_success">发布成功</string>
+    <string name="publish_fail">发布失败</string>
+    <string name="cancel_success">取消成功</string>
+    <string name="cancel_fail">取消失败</string>
+    <string name="get_failed">获取失败</string>
+    <string name="accpet_success">接受预约成功</string>
+    <string name="accpet_failed">接受预约失败</string>
+    <string name="reject_success">拒绝预约成功</string>
+    <string name="reject_failed">拒绝预约失败</string>
+    <string name="none">无</string>
+    
+    <string name="action_create_order">action_create_order</string>
+    <string name="action_show_salon_view">action_show_salon_view</string>
+    <string name="action_show_barber_view">action_show_barber_view</string>
+    
+    <!-- main view -->
+    <string name="main_string1">专业发廊、美容院推荐</string>
+    <string name="main_string2">发型设计师推荐</string>
+    <string name="main_string3">还没有发廊注册</string>
+    <string name="main_string4">还没有发型师注册</string>
+    <string name="main_string5">广告位空缺中</string>
+    <string name="main_string6">商城图片空缺中</string>
+
+    <!-- salon view -->
+    <string name="salon_string1">发型师          %1$d人</string>
+    <string name="salon_string2">请输入发廊的名字</string>
+    <string name="salon_string3">发廊名字不能为空</string>
+    <string name="salon_string4">发型师名字不能为空</string>
+    <string name="salon_string5">%1$d星发廊</string>
+    
+    <!-- barber view -->
+    <string name="barber_string1">请输入发型师的名字</string>
+    <string name="barber_string2">从业年限        %1$d年</string>
+    <string name="barber_string3">%1$d星发型师</string>
+
+    <!-- bid view -->
+    <string name="bid_string1">竞    价 </string>
+    <string name="bid_string2">取消竞价</string>
+    <string name="bid_string3">需求发型</string>
+    <string name="bid_string4">发    布</string>
+    <string name="bid_string5">确    定</string>
+    <string name="bid_string6">自由发型师才能竞价</string>
+    <string name="bid_string7">通过审核后才能竞价</string>
+    <string name="bid_string8">我的竞价</string>
+
+    <!-- salon activity -->
+    <string name="salon_acString1">地    址： </string>
+    <string name="salon_acString2">发型师： %1$d人</string>
+    <string name="salon_acString3">面积：%1$d㎡</string>
+    <string name="salon_acString4">工位：%1$d个</string>
+    <string name="salon_acString5">洗头位：%1$d个</string>
+    <string name="salon_acString6">可提供服务：</string>
+    <string name="salon_acString7">店面展示</string>
+    <string name="salon_acString8">产品展示</string>
+    <string name="salon_acString9">品牌</string>
+    <string name="salon_acString10">用途</string>
+    <string name="salon_acString11">价格</string>
+    <string name="salon_acString12">发    廊</string>
+    <string name="salon_acString13">预约</string>
+    <string name="salon_acString14">无</string>
+    <string name="salon_acString15">申请绑定</string>
+    <string name="salon_acString16">绑定成功</string>
+    <string name="salon_acString17">您不符合发廊的要求，绑定失败</string>
+    <string name="salon_acString18">推荐到首页</string>
+    <string name="salon_acString19">确定将Ta推荐到首页</string>
+
+    <!-- me view -->
+    <string name="me_title">我的主页</string>
+    <string name="me_string1">亲爱的%1$s,欢迎您！</string>
+    <string name="me_string2">点我登陆</string>
+    <string name="me_string3">点我登陆</string>
+    <string name="me_string4">系统设置</string>
+    <string name="me_string5">我的预约</string>
+    <string name="me_string6">我的竞价</string>
+    <string name="me_string7">管理员</string>
+    <string name="me_string8">发型师审核</string>
+    <string name="me_string9">发廊审核</string>
+    <string name="me_string10">商城照片上传</string>
+    <string name="me_string11">广告位照片上传</string>
+    <string name="me_string12">注        册</string>
+    <string name="me_string13">更改资料</string>
+    <string name="me_string14">我的优惠券</string>
+    <string name="me_string15">我的收藏</string>
+    <string name="me_string16">绑定的自由发型师</string>
+    <string name="me_string17">绑定的发廊</string>
+    <string name="me_string18">待审核</string>
+    <string name="me_string19">补全资料</string>
+    <string name="me_string20">请先补全信息，并提交管理员审核</string>
+    <string name="me_string21">请等待管理员审核</string>
+
+    <!-- register&login -->
+    <string name="im_custom">我是顾客</string>
+    <string name="im_salon">我是发廊</string>
+    <string name="im_barber">我是发型师</string>
+    <string name="login_string1">请填写以下资料完成注册后登陆</string>
+    <string name="login_string2">手机号码</string>
+    <string name="login_string3">密码</string>
+    <string name="login_string4">确认密码</string>
+    <string name="login_string5">验证码</string>
+    <string name="login_string6">获得验证码</string>
+    <string name="login_string7">注    册</string>
+    <string name="login_string8">请选择您注册的客户类型</string>
+    <string name="login_string9">请输入正确的电话号码</string>
+    <string name="login_string10">请输入至少6位密码</string>
+    <string name="login_string11">两次输入的密码不同</string>
+    <string name="login_string12">完    成</string>
+    <string name="login_string13">找回密码</string>
+    <string name="login_string14">该账号不存在</string>
+    <string name="login_string15">该账号已存在</string>
+    <string name="login_string16">新密码</string>
+    <string name="login_string17">请输入验证码</string>
+    <string name="login_string18">%1$ds后重新获取</string>
+    <string name="login_string19">忘记密码？</string>
+    <string name="login_string20">登    陆</string>
+    <string name="login_string21">密码错误</string>
+    <string name="login_string22">修改密码</string>
+    <string name="login_string23">旧密码</string>
+    <string name="login_string24">密码错误</string>
+    <string name="login_string25">验证码发送失败</string>
+    <string name="login_string26">验证码发送成功</string>
+
+    <!-- SettingActivity -->
+    <string name="setting_string1">系统设置</string>
+    <string name="setting_string2">修改密码</string>
+    <string name="setting_string3">接收通知</string>
+    <string name="setting_string4">声音提醒</string>
+    <string name="setting_string5">退出帐户</string>
+    <string name="setting_string6">确定退出当前登陆？</string>
+    <string name="setting_string7">检测更新</string>
+    <string name="setting_string8">提示更新</string>
+    
+    <!-- CustomRegisterActivity -->
+    <string name="cus_reString1">个人信息</string>
+    <string name="cus_reString2">设置昵称</string>
+    <string name="cus_reString3">修改昵称</string>
+    <string name="cus_reString4">完    成</string>
+    <string name="cus_reString5">昵称不能为空</string>
+    <string name="cus_reString6">发    送</string>
+    <string name="cus_reString7">优惠券面值</string>
+    <string name="cus_reString8">发送优惠券</string>
+    <string name="cus_reString9">请输入正确的数值</string>
+    
+    
+    <!-- SalonRegisterActivity -->
+    <string name="salon_reString1">填写资料</string>
+    <string name="salon_reString2">请您认真填写资料以便完成注册\n(图片请尽量从相册选取)</string>
+    <string name="salon_reString3">发廊名称</string>
+    <string name="salon_reString4">联系人</string>
+    <string name="salon_reString5">电话</string>
+    <string name="salon_reString6">详细地址</string>
+    <string name="salon_reString7">面积</string>
+    <string name="salon_reString8">剪头工位</string>
+    <string name="salon_reString9">洗头工位</string>
+    <string name="salon_reString10">可提供服务</string>
+    <string name="salon_reString11">门店照片(最多5张)</string>
+    <string name="salon_reString12">店内发型师</string>
+    <string name="salon_reString13">人(至少1人)</string>
+    <string name="salon_reString14">点击编辑</string>
+    <string name="salon_reString15">接受与自由发型师的最低分成(三七最低)</string>
+    <string name="salon_reString16">三七</string>
+    <string name="salon_reString17">四六</string>
+    <string name="salon_reString18">五五</string>
+    <string name="salon_reString19">产品信息(最多20个)</string>
+    <string name="salon_reString20">品牌</string>
+    <string name="salon_reString21">用途</string>
+    <string name="salon_reString22">价格</string>
+    <string name="salon_reString23">上    传</string>
+    <string name="salon_reString24">确定删除照片？</string>
+    <string name="salon_reString25">请输入产品完整信息</string>
+    <string name="salon_reString26">确认删除产品信息？</string>
+    <string name="salon_reString27">是否接受自由发型师</string>
+    <string name="salon_reString28">接受自由发型师的最低等级(一级最低)</string>
+    <string name="salon_reString29">一</string>
+    <string name="salon_reString30">二</string>
+    <string name="salon_reString31">三</string>
+    <string name="salon_reString32">四</string>
+    <string name="salon_reString33">五</string>
+    <string name="salon_reString34">最多10个字，确定后不能修改</string>
+    <string name="salon_reString35">最多5个字</string>
+    <string name="salon_reString36">最多40个字，确定后不能修改</string>
+    <string name="salon_reString37">请填写所有必选项</string>
+    <string name="salon_reString38">所在地区</string>
+    <string name="salon_reString39">选择地区，确定后不能修改</string>
+    <string name="salon_reString40">请填写资料\n(图片请尽量从相册选取)</string>
+    <string name="salon_reString41">最多5个字</string>
+    <string name="salon_reString42">产地</string>
+    
+    <!-- DistrictActivity -->
+    <string name="dis_string1">选择省市区</string>
+    <string name="dis_string2">确    定</string>
+
+    <!-- SalonRegisterBarberActivity -->
+    <string name="salon_rbString1">发型师资料</string>
+    <string name="salon_rbString2">请您认真填写资料以便完成注册\n(图片请尽量从相册选取)</string>
+    <string name="salon_rbString3">昵称</string>
+    <string name="salon_rbString4">从业年限</string>
+    <string name="salon_rbString5">个人照片</string>
+    <string name="salon_rbString6">培训证书上传(最多3张)</string>
+    <string name="salon_rbString7">优秀作品上传(最多3张)</string>
+    <string name="salon_rbString8">服务费</string>
+    <string name="salon_rbString9">烫</string>
+    <string name="salon_rbString10">染</string>
+    <string name="salon_rbString11">剪</string>
+    <string name="salon_rbString12">短</string>
+    <string name="salon_rbString13">中</string>
+    <string name="salon_rbString14">长</string>
+    <string name="salon_rbString15">有无健康证</string>
+    <string name="salon_rbString16">是</string>
+    <string name="salon_rbString17">否</string>
+    <string name="salon_rbString18">请填写所有必选项</string>
+    <string name="salon_rbString19">所在发廊</string>
+    <string name="salon_rbString20">最多10个字</string>
+    <string name="salon_rbString21">请输入正确的身份证号</string>
+    <string name="salon_rbString22">请选择您所在地区</string>
+    <string name="salon_rbString23">确定后再修改需要重新审核</string>
+    <string name="salon_rbString24">确定后不能修改</string>
+    <string name="salon_rbString25">自我推荐</string>
+
+    <!-- BarberRegisterActivity -->
+    <string name="barber_reString1">填写资料</string>
+    <string name="barber_reString2">请您认真填写资料以便完成注册</string>
+    <string name="barber_reString3">姓名</string>
+    <string name="barber_reString4">身份证号</string>
+    <string name="barber_reString5">昵称</string>
+    <string name="barber_reString6">从业年限</string>
+    <string name="barber_reString7">所在发廊</string>
+    <string name="barber_reString8">个人照片</string>
+    <string name="barber_reString9">培训证书上传</string>
+    <string name="barber_reString10">优秀作品上传</string>
+    <string name="barber_reString11">提供产品</string>
+    <string name="barber_reString12">品牌</string>
+    <string name="barber_reString13">用途</string>
+    <string name="barber_reString14">价格</string>
+    <string name="barber_reString15">与发廊分成</string>
+    <string name="barber_reString16">最多5个字，确定后不能修改</string>
+    <string name="barber_reString17">最多10个字</string>
+    <string name="barber_reString18">产品信息(最多6个)</string>
+    <string name="barber_reString19">确定后不能修改</string>
+    <string name="barber_reString20">选择地区，确定后不能修改</string>
+    <string name="barber_reString21">擅长</string>
+    <string name="barber_reString22">技术擅长描述，最多100字</string>
+
+    <!-- SalonAddBarberActivity -->
+    <string name="salon_abString1">编辑发型师</string>
+    <string name="salon_abString2">确认删除发型师？</string>
+    <string name="salon_abString3">删除失败</string>
+    <string name="salon_abString4">添加</string>
+    <string name="salon_abString5">选择发型师</string>
+
+    <!-- CustomOrderActivity -->
+    <string name="cus_orString1">我的预约</string>
+    <string name="cus_orString2">预约日期：%1$s</string>
+    <string name="cus_orString3">预约时间：%1$s</string>
+    <string name="cus_orString4">预约发型师：%1$s</string>
+    <string name="cus_orString5">联系方式：%1$s</string>
+    <string name="cus_orString6">是否完成</string>
+    <string name="cus_orString7">请对此次服务评分</string>
+    <string name="cus_orString8">取消预约</string>
+    <string name="cus_orString9">分享</string>
+    <string name="cus_orString10">待确认</string>
+    <string name="cus_orString11">确认完成</string>
+    <string name="cus_orString12">等待发廊确认中...</string>
+    <string name="cus_orString13">等待发廊和发型师确认中...</string>
+    <string name="cus_orString14">评分</string>
+    <string name="cus_orString15">附加信息：%1$s</string>
+    <string name="cus_orString16">优惠券：%1$d元</string>
+    <string name="cus_orString17">优惠券：无</string>
+    <string name="cus_orString18">确定已经完成？</string>
+    <string name="cus_orString19">分享</string>
+    <string name="cus_orString20">确定删除本条预约记录？</string>
+    <string name="cus_orString21">已取消</string>
+    <string name="cus_orString22">被拒绝</string>
+    <string name="cus_orString23">确定取消预约？</string>
+    <string name="cus_orString24">请先评分</string>
+    <string name="cus_orString25">预约完成,快把Ta分享给您的好友吧，有机会获得优惠券哦</string>
+    <string name="cus_orString26">确认失败，请重试</string>
+    <string name="cus_orString27">分享成功</string>
+    <string name="cus_orString28">分享失败，请重试</string>
+    <string name="cus_orString29">已分享</string>
+    <string name="cus_orString30">预约发廊：%1$s</string>
+    <string name="cus_orString31">优惠券：￥%1$d</string>
+    <string name="cus_orString32">附加信息：%1$s</string>
+    <string name="cus_orString33">预约发廊：%1$s</string>
+    <string name="cus_orString34">推荐发型师：%1$s</string>
+    <string name="cus_orString35">推荐发廊：%1$s</string>
+    <string name="cus_orString36">这个发型师不错哦！</string>
+    <string name="cus_orString37">这家发廊不错哦！</string>
+    
+    <!-- CustomCouponActivity -->
+    <string name="cus_cuString1">我的优惠券</string>
+    <string name="cus_cuString2">发廊：</string>
+    <string name="cus_cuString3">发型师：</string>
+    <string name="cus_cuString4">使用规则?</string>
+    <string name="cus_cuString5">￥</string>
+    <string name="cus_cuString6">发廊：\n%1$s</string>
+    <string name="cus_cuString7">发型师：\n%1$s</string>
+    <string name="cus_cuString8">立即预约</string>
+    <string name="cus_cuString9">已使用</string>
+    <string name="cus_cuString10">通过优惠券预约发廊/发型师，在预约信息中将显示优惠券面值，在消费完成后付现金时，能获得相应的优惠。
+        （如：您消费50元，优惠券5元，您实付45元）</string>
+    
+    <!-- BarberActivity -->
+    <string name="barber_acString1">自由发型师</string>
+    <string name="barber_acString2">预         约</string>
+    <string name="barber_acString3">地区   %1$s</string>
+    <string name="barber_acString4">从业年限      %1$d年</string>
+    <string name="barber_acString5">优秀作品展示</string>
+    <string name="barber_acString6">请先选择发廊</string>
+    <string name="barber_acString7">%1$s还没有绑定发廊，无法预约</string>
+    <string name="barber_acString8">请选择您想去的发廊</string>
+    <string name="barber_acString9">合作发廊</string>
+    <string name="barber_acString10">请预约服务</string>
+    <string name="barber_acString11">擅长</string>
+    <string name="barber_acString12">(%1$d星)</string>
+    <string name="barber_acString13">顾客评分：</string>
+    
+    <!-- CustomSendOrderActivity -->
+    <string name="cus_soString1">预约信息</string>
+    <string name="cus_soString2">预约日期</string>
+    <string name="cus_soString3">预约时间</string>
+    <string name="cus_soString4">其他信息</string>
+    <string name="cus_soString5">最多40个字</string>
+    <string name="cus_soString6">确            定</string>
+    <string name="cus_soString7">请选择预约日期</string>
+    <string name="cus_soString8">请选择预约时间</string>
+    <string name="cus_soString9">您的预约已发送，请等待确认</string>
+    <string name="cus_soString10">预约发送失败，请重试</string>
+    <string name="cus_soString11">请先选择预约日期</string>
+    <string name="cus_soString12">请至少提前半小时预约</string>
+    <string name="cus_soString13">您已经有预约在进行中</string>
+    <string name="cus_soString14">(竞价￥%1$d)  </string>
+    
+    <!-- BarberBidActivity -->
+    <string name="barber_bString1">我的竞价</string>
+    <string name="barber_bString2">需求发型</string>
+    <string name="barber_bString3">顾客：</string>
+    <string name="barber_bString4">我的出价：</string>
+    <string name="barber_bString5">竞价状态：</string>
+    <string name="barber_bString6">预约信息</string>
+    <string name="barber_bString7">进行中</string>
+    <string name="barber_bString8">成功</string>
+    <string name="barber_bString9">已结束</string>
+    
+    <!-- BarberOrderActivity -->
+    <string name="barber_orString1">我的预约</string>
+    <string name="barber_orString2">预约日期:</string>
+    <string name="barber_orString3">预约时间:</string>
+    <string name="barber_orString4">指定发廊:</string>
+    <string name="barber_orString5">预约客户:</string>
+    <string name="barber_orString6">联系方式:</string>
+    <string name="barber_orString7">附加信息:</string>
+    <string name="barber_orString8">接受</string>
+    <string name="barber_orString9">拒绝</string>
+    <string name="barber_orString10">已完成</string>
+    <string name="barber_orString11">进行中</string>
+    <string name="barber_orString12">已取消</string>
+    <string name="barber_orString13">已拒绝</string>
+    <string name="barber_orString14">优惠券</string>
+    <string name="barber_orString15">待确认</string>
+    <string name="barber_orString16">提示</string>
+    <string name="barber_orString17">确定删除？</string>
+    <string name="barber_orString18">确定拒绝预约？</string>
+    <string name="barber_orString19">接受预约后将不能取消，确定接受？</string>
+    <string name="barber_orString20">顾客已经将您分享给Ta的微信好友，快发张优惠券给Ta吧。\nPS：顾客再次预约您服务后，顾客给予您的现金将扣除优惠券的数额。
+        （如：顾客消费50元，优惠券5元，顾客实付45元）</string>
+    <string name="barber_orString21">发优惠券</string>
+    <string name="barber_orString22">优惠券:</string>
+    <string name="barber_orString23">￥%1$d</string>
+    <string name="barber_orString24">与发廊分成：</string>
+    
+    <!-- BidActivity -->
+    <string name="bid_acString1">参与竞价</string>
+    <string name="bid_acString2">竞价价格</string>
+    <string name="bid_acString3">竞        价</string>
+    <string name="bid_acString4">请输入正确的价格</string>
+    <string name="bid_acString5">您的竞价已发送，请等待确认。</string>
+    <string name="bid_acString6">详细描述:</string>
+    <string name="bid_acString7">最多40个字，可不输入</string>
+    <string name="bid_acString8">详细描述:%1$s</string>
+    <string name="bid_acString9">详细描述:无</string>
+    <string name="bid_acString10">选择地区</string>
+    <string name="bid_acString11">地区</string>
+    <string name="bid_acString12">请选择地区</string>
+    <string name="bid_acString13">请上传发型照片</string>
+    <string name="bid_acString14">确定取消竞价？</string>
+    <string name="bid_acString15">请选择发型师</string>
+    <string name="bid_acString16">选择发型师(最多有6名发型师竞价)</string>
+    <string name="bid_acString17">￥  %1$d</string>
+    <string name="bid_acString18">地区:</string>
+    <string name="bid_acString19">地区: %1$s</string>
+    <string name="bid_acString20">发送失败，请重试</string>
+    <string name="bid_acString21">已参与竞价</string>
+    
+    <!-- SalonOrderActivity -->
+    <string name="salon_orString1">我的预约</string>
+    <string name="salon_orString2">本店发型师</string>
+    <string name="salon_orString3">自由发型师</string>
+    <string name="salon_orString4">接受预约成功，请等待发型师确认</string>
+    <string name="salon_orString5">接受预约失败，请重试</string>
+    
+    <!-- SalonBarbersActivity -->
+    <string name="salon_baString1">自由发型师</string>
+    <string name="salon_baString2">分成:%1$s</string>
+    <string name="salon_baString3">一级</string>
+    <string name="salon_baString4">二级</string>
+    <string name="salon_baString5">三级</string>
+    <string name="salon_baString6">四级</string>
+    <string name="salon_baString7">五级</string>
+    <string name="salon_baString8">三七</string>
+    <string name="salon_baString9">四六</string>
+    <string name="salon_baString10">五五</string>
+    <string name="salon_baString11">等级:%1$s</string>
+    <string name="salon_baString12">顾客评分:</string>
+    <string name="salon_baString13">确定解除与自由发型师的绑定？</string>
+    <string name="salon_baString14">发型师</string>
+    
+    <!-- BarberSalonsActivity -->
+    <string name="barber_saString1">发廊</string>
+    <string name="barber_saString2">确定解除与发廊的绑定？</string>
+    <string name="barber_saString3">解绑成功</string>
+    <string name="barber_saString4">解绑失败，请重试</string>
+    
+    <!-- AdminBarbersActivity -->
+    <string name="admin_baString1">自由发型师</string>
+    <string name="admin_baString2">姓名：%1$s</string>
+    <string name="admin_baString3">审核类型：%1$s</string>
+    <string name="admin_baString4">初始注册</string>
+    <string name="admin_baString5">修改信息</string>
+    
+    <!-- AdminSalonsActivity -->
+    <string name="admin_saString1">发廊</string>
+    <string name="admin_saString2">点击查看</string>
+    <string name="admin_saString3">请为发廊评级(一级最低)</string>
+    <string name="admin_saString4">修改发廊等级(一级最低)</string>
+    <string name="admin_saString5">提供产品</string>
+    <string name="admin_saString6">可提供服务服务</string>
+    <string name="admin_saString7">是否接受自由发型师: 是</string>
+    <string name="admin_saString8">是否接受自由发型师: 否</string>
+    <string name="admin_saString9">接受与自由发型师的最低分成: %1$s</string>
+    <string name="admin_saString10">接受自由发型师的最低等级: %1$s</string>
+    <string name="admin_saString11">名字：%1$s</string>
+    <string name="admin_saString12">地区：%1$s</string>
+    <string name="admin_saString13">发廊资料</string>
+    
+    <!-- AdminVerifyBarberActivity -->
+    <string name="admin_vbString1">初始注册</string>
+    <string name="admin_vbString2">发型师资料</string>
+    <string name="admin_vbString3">培训证书</string>
+    <string name="admin_vbString4">优秀作品</string>
+    <string name="admin_vbString5">提供产品</string>
+    <string name="admin_vbString6">电话</string>
+    <string name="admin_vbString7">通过</string>
+    <string name="admin_vbString8">拒绝</string>
+    <string name="admin_vbString9">请为自由发型师评级(一级最低)</string>
+    <string name="admin_vbString10">与发廊分成</string>
+    <string name="admin_vbString11">健康证：有</string>
+    <string name="admin_vbString12">健康证：无</string>
+    <string name="admin_vbString13">修改资料</string>
+    <string name="admin_vbString14">修改自由发型师等级(一级最低)</string>
+    <string name="admin_vbString15">请为自由发型师评级</string>
+    <string name="admin_vbString16">确定通过审核？</string>
+    <string name="admin_vbString17">确定拒绝申请？</string>
+    <string name="admin_vbString18">审核失败。请重试</string>
+    <string name="admin_vbString19">审核成功</string>
+    <string name="admin_vbString20">擅长：无</string>
+    <string name="admin_vbString21">擅长：%1$s</string>
+
+    <!-- AdminSalonBarberActivity -->
+    <string name="admin_sbString1">发廊内发型师</string>
+    <string name="admin_sbString2">返    回</string>
+    
+    <!-- AdminAdActivity -->
+    <string name="admin_adString1">广告位照片</string>
+    <string name="admin_adString2">最多能保存3张广告位照片\n(图片请尽量从相册选取)</string>
+    <string name="admin_adString3">上传成功</string>
+    <string name="admin_adString4">上传失败，请重试</string>
+    
+    <!-- AdminMallActivity -->
+    <string name="admin_maString1">商城照片</string>
+    <string name="admin_maString2">最多能保存3张商城照片\n(图片请尽量从相册选取)</string>
+    
+    <!-- AlarmMessageReceiver -->
+    <string name="msg_string1">有发廊/发型师需要您审核</string>
+    <string name="msg_string2">有发廊需要您审核</string>
+    <string name="msg_string3">有发型师需要您审核</string>
+    <string name="msg_string4">有新发型师参与竞价</string>
+    <string name="msg_string5">您的预约已成功</string>
+    <string name="msg_string6">您的预约被拒绝了</string>
+    <string name="msg_string7">您收到了新的优惠券</string>
+    <string name="msg_string8">您有新的消息</string>
+    <string name="msg_string9">您已通过注册审核</string>
+    <string name="msg_string10">您未通过注册审核，可以修改资料后重新提交审核</string>
+    <string name="msg_string11">修改资料通过审核</string>
+    <string name="msg_string12">修改资料未通过审核</string>
+    <string name="msg_string13">您有竞标成功</string>
+    <string name="msg_string14">您有竞标失败</string>
+    <string name="msg_string15">您有预约成功</string>
+    <string name="msg_string16">您有预约被发廊拒绝了</string>
+    <string name="msg_string17">有顾客取消了预约</string>
+    <string name="msg_string18">您有预约完成了</string>
+    <string name="msg_string19">有顾客通过微信把您推荐给Ta的好友，快给Ta优惠券吧</string>
+    <string name="msg_string20">有发廊取消了与您的绑定</string>
+    <string name="msg_string21">您已通过注册审核</string>
+    <string name="msg_string22">您未通过注册审核，可以修改资料后重新提交审核</string>
+    <string name="msg_string23">修改资料通过审核</string>
+    <string name="msg_string24">修改资料未通过审核</string>
+    <string name="msg_string25">您有预约成功</string>
+    <string name="msg_string26">您有预约被自由发型师拒绝了</string>
+    <string name="msg_string27">有顾客取消了预约</string>
+    <string name="msg_string28">您有预约完成了</string>
+    <string name="msg_string29">有顾客通过微信把您推荐给Ta的好友，快给Ta优惠券吧</string>
+    <string name="msg_string30">有自由发型师绑定了您</string>
+    <string name="msg_string31">有自由发型师取消了与您的绑定</string>
+    <string name="msg_string32">您有新的预约</string>
+    
+    <!-- datepicker -->
+    <string name="dp_string1">请选择日期</string>
+    <string name="dp_string2">请选择时间</string>
+    
+    
+    
+    
+    
+    
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ed5736"
+            android:gravity="center"
+            android:text="@string/health"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_large_size" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:background="@null"
+            android:src="@drawable/title_back_selector" />
+    </RelativeLayout>
+
+    <LinearLayout   
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/query_text"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/corners"
+            android:gravity="left|top"            
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="15sp" />        
+
+        <Button
+            android:id="@+id/query"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_corner_selector"
+            android:text="@string/cha_zhao"
+            android:textColor="@color/clr_3e"
+            android:textSize="@dimen/btn_normal_size" />
+    </LinearLayout>
+    
+</LinearLayout>
